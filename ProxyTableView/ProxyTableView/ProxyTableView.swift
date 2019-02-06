@@ -11,26 +11,26 @@ import UIKit
 private let delegateKey = "delegate"
 private let dataSourceKey = "dataSource"
 class ProxyTableView: UITableView {
-    let delegateProxy = DelegateProxy()
-    let dataSourceProxy = DelegateProxy()
+    let delegateProxy = ProtocolProxy()
+    let dataSourceProxy = ProtocolProxy()
     
     var defaultDelgate: UITableViewDelegate? {
         didSet{
-            delegateProxy.defaultObject = defaultDelgate
+            delegateProxy.defaultImp = defaultDelgate
             setValue(delegateProxy, forKey: delegateKey)
         }
     }
     var defaultDataSource: UITableViewDataSource? {
         didSet{
-            dataSourceProxy.defaultObject = defaultDataSource
+            dataSourceProxy.defaultImp = defaultDataSource
             setValue(dataSourceProxy, forKey: dataSourceKey)
         }
     }
     
     override public var dataSource: UITableViewDataSource?{
         didSet{
-            if !(dataSource is DelegateProxy){
-                dataSourceProxy.rawObject = dataSource
+            if !(dataSource is ProtocolProxy){
+                dataSourceProxy.customImp = dataSource
                 setValue(dataSourceProxy, forKey: dataSourceKey)
             }
         }
@@ -38,8 +38,8 @@ class ProxyTableView: UITableView {
     
     override public var delegate: UITableViewDelegate?{
         didSet{
-            if !(delegate is DelegateProxy){
-                delegateProxy.rawObject = delegate
+            if !(delegate is ProtocolProxy){
+                delegateProxy.customImp = delegate
                 setValue(delegateProxy, forKey: delegateKey)
             }
         }

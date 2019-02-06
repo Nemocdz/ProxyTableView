@@ -12,7 +12,7 @@
 		DA75728822015E3B00691F30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75728622015E3B00691F30 /* Main.storyboard */; };
 		DA75728A22015E3C00691F30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA75728922015E3C00691F30 /* Assets.xcassets */; };
 		DA75728D22015E3C00691F30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA75728B22015E3C00691F30 /* LaunchScreen.storyboard */; };
-		DA75729722015E6300691F30 /* DelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75729622015E6300691F30 /* DelegateProxy.swift */; };
+		DA75729722015E6300691F30 /* ProtocolProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75729622015E6300691F30 /* ProtocolProxy.swift */; };
 		DA75729922015E6B00691F30 /* ProxyTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA75729822015E6B00691F30 /* ProxyTableView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		DA75728922015E3C00691F30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA75728C22015E3C00691F30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA75728E22015E3C00691F30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA75729622015E6300691F30 /* DelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegateProxy.swift; sourceTree = "<group>"; };
+		DA75729622015E6300691F30 /* ProtocolProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolProxy.swift; sourceTree = "<group>"; };
 		DA75729822015E6B00691F30 /* ProxyTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProxyTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 		DA75728122015E3B00691F30 /* ProxyTableView */ = {
 			isa = PBXGroup;
 			children = (
-				DA75729522015E4800691F30 /* DelegateProxy */,
+				DA75729522015E4800691F30 /* ProtocolProxy */,
 				DA75729422015E4100691F30 /* ProxyTableView */,
 				DA75728222015E3B00691F30 /* AppDelegate.swift */,
 				DA75728422015E3B00691F30 /* ViewController.swift */,
@@ -78,12 +78,12 @@
 			path = ProxyTableView;
 			sourceTree = "<group>";
 		};
-		DA75729522015E4800691F30 /* DelegateProxy */ = {
+		DA75729522015E4800691F30 /* ProtocolProxy */ = {
 			isa = PBXGroup;
 			children = (
-				DA75729622015E6300691F30 /* DelegateProxy.swift */,
+				DA75729622015E6300691F30 /* ProtocolProxy.swift */,
 			);
-			path = DelegateProxy;
+			path = ProtocolProxy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +160,7 @@
 				DA75729922015E6B00691F30 /* ProxyTableView.swift in Sources */,
 				DA75728522015E3B00691F30 /* ViewController.swift in Sources */,
 				DA75728322015E3B00691F30 /* AppDelegate.swift in Sources */,
-				DA75729722015E6300691F30 /* DelegateProxy.swift in Sources */,
+				DA75729722015E6300691F30 /* ProtocolProxy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
